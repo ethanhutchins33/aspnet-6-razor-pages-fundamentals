@@ -12,9 +12,12 @@ public class AddProduct : PageModel
     {
     }
 
-    public void OnPost()
+    public IActionResult OnPost()
     {
-        // Save product to database
+        if (!ModelState.IsValid) return Page();
+
+        // TODO: Save product to database
         var productName = NewProduct!.Name;
+        return RedirectToPage("ViewAllProducts");
     }
 }

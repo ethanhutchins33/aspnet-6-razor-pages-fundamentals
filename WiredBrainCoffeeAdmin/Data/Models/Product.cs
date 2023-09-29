@@ -9,9 +9,11 @@ public class Product
 
     [Required] public string? Name { get; set; }
 
-    [Required] public string? Description { get; set; }
+    [Required]
+    [MinLength(20, ErrorMessage = "The description should be at least 20 characters with meaningful content")]
+    public string? Description { get; set; }
 
-    [Required] public string? ShortDescription { get; set; }
+    [Required] [MaxLength(30)] public string? ShortDescription { get; set; }
 
     [Required] public decimal Price { get; set; }
 
