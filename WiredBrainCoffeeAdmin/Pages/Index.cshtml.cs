@@ -13,7 +13,7 @@ public class IndexModel : PageModel
         _logger = logger;
     }
 
-    public List<SurveyItem> SurveyResults { get; set; }
+    public List<SurveyItem>? SurveyResults { get; set; }
 
     public void OnGet()
     {
