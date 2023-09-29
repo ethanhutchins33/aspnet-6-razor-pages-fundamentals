@@ -1,12 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.IO;
-using System.Text;
-using System.Text.Json;
-using System;
-using System.IO;
-using System.Threading.Tasks;
-using WiredBrainCoffeeAdmin.Data.Models;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace WiredBrainCoffeeAdmin.Pages
 {
