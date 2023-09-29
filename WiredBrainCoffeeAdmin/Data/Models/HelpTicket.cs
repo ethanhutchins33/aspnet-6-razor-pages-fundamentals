@@ -1,9 +1,8 @@
-﻿namespace WiredBrainCoffeeAdmin.Data.Models
+﻿namespace WiredBrainCoffeeAdmin.Data.Models;
+
+public class HelpTicket
 {
-    public class HelpTicket
-    {
-        public int Id { get; set; }
-        public string Description { get; set; }
-        public string Status { get; set; }
-    }
+    public int Id { get; set; }
+    public string Description { get; set; }
+    public string Status { get; set; }
 }
