@@ -47,45 +47,45 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
-        </header>
-        <main>
-            @RenderBody()
-        </main>
-        <footer>
-            <div class="row">
-                <div class="col-md-4">
-                    <p>&copy; 2022 - WiredBrainCoffeeAdmin</p>
-                    <img id="logo" src="~/images/wired-brain-coffee-logo.png" alt=""/>
-                </div>
-                <div class="col-md-4">
-                    <p>1234 Wired Brain Way</p>
-                    <p>Awesome City, CA 55555</p>
-                    <p>Phone: 555-123-4567</p>
-                    <p>Fax: 555-123-4567</p>
-                </div>
-                <div class="col-md-4">
-                    <div class="footer-pic">
-                        @{
-                            var urlPath = Context.Request.Path;
-                        }
+            </div>
+        </nav>
+    </header>
+    <main>
+        @RenderBody()
+    </main>
+    <footer>
+        <div class="row">
+            <div class="col-md-4">
+                <p>&copy; 2022 - WiredBrainCoffeeAdmin</p>
+                <img id="logo" src="~/images/wired-brain-coffee-logo.png" alt=""/>
+            </div>
+            <div class="col-md-4">
+                <p>1234 Wired Brain Way</p>
+                <p>Awesome City, CA 55555</p>
+                <p>Phone: 555-123-4567</p>
+                <p>Fax: 555-123-4567</p>
+            </div>
+            <div class="col-md-4">
+                <div class="footer-pic">
+                    @{
+                        var urlPath = Context.Request.Path;
+                    }
 
-                        @switch (urlPath.Value!.ToLower())
-                        {
-                            case "/":
-                                <img src="~/images/menu/cake.png" alt="cake"/>
-                                break;
-                            case "/products/addproduct":
-                                <img src="~/images/menu/waffles.png" alt="waffles"/>
-                                break;
-                            case "products/viewallproducts":
-                                <img src="~/images/menu/salad-house.png" alt="salad-house"/>
-                                break;
-                            case "/help":
-                                <img src="~/images/menu/cappucino.png" alt="cappuccino"/>
-                                break;
-                        }
-                    </div>
+                    @switch (urlPath.Value!.ToLower())
+                    {
+                        case "/":
+                            <img src="~/images/menu/cake.png" alt="cake"/>
+                            break;
+                        case "/products/addproduct":
+                            <img src="~/images/menu/waffles.png" alt="waffles"/>
+                            break;
+                        case "products/viewallproducts":
+                            <img src="~/images/menu/salad-house.png" alt="salad-house"/>
+                            break;
+                        case "/help":
+                            <img src="~/images/menu/cappucino.png" alt="cappuccino"/>
+                            break;
+                    }
                 </div>
             </div>
         </div>
