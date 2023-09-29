@@ -1,13 +1,20 @@
-﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using WiredBrainCoffeeAdmin.Data.Models;
 
 namespace WiredBrainCoffeeAdmin.Pages.Products;
 
 public class AddProduct : PageModel
 {
-    public Product? NewProduct { get; set; }
+    [BindProperty] public Product? NewProduct { get; set; }
 
     public void OnGet()
     {
+    }
+
+    public void OnPost()
+    {
+        // Save product to database
+        var productName = NewProduct!.Name;
     }
 }
