@@ -6,10 +6,10 @@
 
 <div class="container-fluid dashboard">
     <h1 class="h2">Welcome to Wired Brain Coffee!</h1>
-    <hr />
+    <hr/>
     <div class="row">
         <div class="col-md-6">
-            
+
         </div>
         <div class="col-md-6">
             <div class="card">
@@ -22,8 +22,10 @@
                         var temperature = 12;
                     }
                     <p>The current temperature is @temperature degrees.</p>
-                    @if(temperature < 17){
-                        <p>We recommend a coat until it warms up
+                    @if (temperature < 17)
+                    {
+                        <p>
+                            We recommend a coat until it warms up
                             @(17 - temperature) degrees.
                         </p>
                     }

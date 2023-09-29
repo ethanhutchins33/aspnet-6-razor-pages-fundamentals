@@ -6,6 +6,5 @@ public class ViewAllProducts : PageModel
 {
     public void OnGet()
     {
-        
     }
 }

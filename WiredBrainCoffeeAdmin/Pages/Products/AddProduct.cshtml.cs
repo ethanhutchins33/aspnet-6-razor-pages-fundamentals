@@ -6,6 +6,5 @@ public class AddProduct : PageModel
 {
     public void OnGet()
     {
-        
     }
 }
