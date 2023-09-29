@@ -10,6 +10,7 @@ The project is a simple admin dashboard for Wired Brain Coffee, a fictional coff
 - Razor Pages
 - Entity Framework Core
 - Bootstrap
-- Getting Started
+
+## Getting Started
 
 To get started with the project, clone the repository and open the solution file in Visual Studio. Then, build and run the project.
